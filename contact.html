@@ -7,7 +7,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
-        <link rel="icon" href="img/Kanto.png" type="image/x-icon">
+        <link rel="icon" href="img/kanto logo.png" type="image/x-icon">
 
 
         <!-- Google Web Fonts -->
@@ -29,6 +29,16 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+            emailjs.init({
+                publicKey: "2MKQ59yD55bkvCybl",
+            });
+            })();
+        </script>
     </head>
 
     <body>
@@ -77,7 +87,7 @@
         <div class="container-fluid position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>KANTO Consulting</h1>
+                    <h1 class="m-0"><img src="./img/kanto logo.png" alt="">KANTO Consulting</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -88,7 +98,6 @@
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="services.html" class="nav-item nav-link">Services</a>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
                         <a href="contact.html" class="nav-item nav-link active">Contact</a>
                     </div>
                     <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Register Now</a>
@@ -123,36 +132,60 @@
                             <div class="text-center mb-4">
                                 <i class="fa fa-map-marker-alt fa-3x text-primary"></i>
                                 <h4 class="text-primary"><Address></Address></h4>
-                                <p class="mb-0">123 ranking Street, <br> New York, USA</p>
+                                <p class="mb-0">Cargill's Food City Express - Palapathwela<br> (Above Cargills FoodCity)</p>
                             </div>
                             <div class="text-center mb-4">
                                 <i class="fa fa-phone-alt fa-3x text-primary mb-3"></i>
                                 <h4 class="text-primary">Mobile</h4>
-                                <p class="mb-0">+012 345 67890</p>
-                                <p class="mb-0">+012 345 67890</p>
+                                <p class="mb-0"> 0662221433</p>
+                                <p class="mb-0"> +94 773548440</p>
                             </div>
                            
                             <div class="text-center">
                                 <i class="fa fa-envelope-open fa-3x text-primary mb-3"></i>
                                 <h4 class="text-primary">Email</h4>
-                                <p class="mb-0">info@example.com</p>
-                                <p class="mb-0">info@example.com</p>
+                                <p class="mb-0"><a href="mailto:info.kantoconsulting@gmail.com">info.kantoconsulting@gmail.com</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-8">
                         <h3 class="mb-2">Send us a message</h3>
-                        <p class="mb-4">Fill in to Register and recieve more Information.</p>
-                        <div class="col-lg-8">
-                            <div class="google-form">
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc68IGwW73xta37ePw0BjUiLnRk67_KXMBVTBKdwM5Gmbu0Lg/viewform?usp=sf_link" width="150%" height="600" frameborder="0" marginheight="0" marginwidth="0" style="border-radius: 15px; overflow: hidden;">Loading…</iframe>
+                        <form action="https://formspree.io/f/xblrwneo" method="POST">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0" id="name" name="name" placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control border-0" id="email" name="email" placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0" id="subject" name="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control border-0" placeholder="Leave a message here" id="message" name="message" style="height: 160px" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3">Send Message</button>
+                                </div>
                             </div>
-                        </div> 
+                        </form>
                     </div>
                     <div class="col-12">
                         <div class="rounded">
                             <iframe class="rounded w-100" 
-                            style="height: 450px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d784.9986357398523!2d79.85575055222819!3d6.895282429346994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bdee494e9d3%3A0x629c2df0a6d82f99!2sIIT%20School%20Of%20Computing!5e0!3m2!1sen!2slk!4v1721650345231!5m2!1sen!2slk" 
+                            style="height: 450px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.41115347882!2d80.6260748!3d7.5300546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae34fdaf17554b3%3A0xadd1ddc521f2418b!2sCargill&#39;s%20Food%20City%20Express%20-%20Palapathwela!5e0!3m2!1sen!2slk!4v1725193086896!5m2!1sen!2slk" " 
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
@@ -185,10 +218,10 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Get In Touch</h4>
-                            <a href=""><i class="fas fa-home me-2"></i> 123 Street, New York, USA</a>
-                            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
-                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
-                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <a href=""><i class="fas fa-home me-2"></i> Cargill's Food City Express - Palapathwela (Above Cargills FoodCity)</a>
+                            <a href="mailto: info.kantoconsulting@gmail.com"><i class="fas fa-envelope me-2"></i> info.kantoconsulting@gmail.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> Telephone : 0662221433</a>
+                            <a href="" class="mb-3"><i class="fas fa-phone me-2"></i> Mobile : +94 773548440</a>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-share fa-2x text-white me-2"></i>
                                 <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -271,13 +304,14 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Your Site Name</a>, All right reserved.
+                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">KANTO Consulting</a>, All right reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-start">
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                         <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                         <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="text-white" href="https://htmlcodex.com">HTML Codex</a>
+                        Designed By Deshan Wijethunga
+                    </div>
                     </div>
                 </div>
             </div>
