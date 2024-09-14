@@ -29,6 +29,29 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            .national-item {
+                position: relative;
+            }
+            
+            .hover-description {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                color: white;
+                text-align: center;
+                padding: 10px;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            
+            .national-item:hover .hover-description {
+                opacity: 1;
+            }
+            </style>
     </head>
 
     <body>
@@ -73,7 +96,7 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img src="img/school.jpg" class="img-fluid" alt="Image">
+                            <img src="img/learning.jpg" class="img-fluid" alt="Image">
                             <div class="carousel-caption">
                                 <div class="p-3" style="max-width: 900px;">
                                     <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore The World</h4>
@@ -137,9 +160,8 @@
                     <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
                         <h5 class="section-about-title pe-3">About Us</h5>
                         <h1 class="mb-4">Welcome to <span class="text-primary">KANTO Consulting</span></h1>
-                        <p class="mb-4">Welcome to KANTO CONSULTING PVT LTD!
-                            At Kanto Consulting, we are passionate about bridging the gap between Sri Lanka and Japan by offering comprehensive services in job visas, student visas, and Japanese language training.</p>
-                        <p class="mb-4">Our mission is to help individuals pursue career opportunities and academic dreams in Japan by providing tailored support through every step of the visa application process. Whether you're seeking to work or study in Japan, our experienced team is dedicated to ensuring a smooth transition with expert guidance...</p>
+                        <p class="mb-4">About KANTO CONSULTING PRIVATE LIMITED
+                            At KANTO CONSULTING PRIVATE LIMITED, we are passionate about helping individuals fulfill their dreams of working, training, or studying in Japan. As a specialized agency, we offer tailored solutions across three essential visa categories: SSW Visa (Specified Skilled Worker), Training Visa, and Student Visa, ensuring a smooth and successful application process. With our deep expertise in Japanese immigration and a strong commitment to client satisfaction, we provide personalized guidance for every step of your journey..
                         <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="about.html">Read More</a>
                     </div>
                 </div>
@@ -504,58 +526,85 @@
                     <div class="tab-content">
                         <div id="NationalTab-1" class="tab-pane fade show p-0 active">
                             <div class="row g-4">
+                                <!-- First image -->
                                 <div class="col-md-6 col-lg-4">
-                                    <div class="national-item">
+                                    <div class="national-item position-relative">
                                         <img src="img/farmers.jpg" class="img-fluid w-100 rounded" alt="Image">
                                         <div class="national-content">
                                             <div class="national-info">
                                                 <h5 class="text-white text-uppercase mb-2">Agriculture Industry</h5>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="national-item">
-                                        <img src="img/construction.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                        <div class="national-content">
-                                            <div class="national-info">
-                                                <h5 class="text-white text-uppercase mb-2">Construction industry</h5>
-                                            </div>
+                                        <div class="hover-description">
+                                            <p>The Japanese SSW Visa (Specified Skilled Worker) for the Agriculture Industry is designed to attract skilled foreign workers to meet the growing demand in Japan's agricultural sector. Workers under this visa are employed in various roles, such as crop production, livestock farming, and agricultural machinery operation. The visa allows individuals to work in Japan for up to five years.</p>
                                         </div>
                                     </div>
                                 </div>
+                
+                                <!-- Second image -->
                                 <div class="col-md-6 col-lg-4">
-                                    <div class="national-item">
+                                    <div class="national-item position-relative" style="height: 275px; object-fit: cover;">
+                                        <img src="img/construction.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <div class="national-content">
+                                            <div class="national-info">
+                                                <h5 class="text-white text-uppercase mb-2">Construction Industry</h5>
+                                            </div>
+                                        </div>
+                                        <div class="hover-description">
+                                            <p>The Japanese SSW Visa (Specified Skilled Worker) for the Construction Industry is aimed at addressing labor shortages by attracting skilled foreign workers to Japan's construction sector. Workers under this visa are engaged in roles such as building construction, civil engineering, and construction machinery operation. The visa allows individuals to work in Japan for up to five years, helping to support the nation's infrastructure projects and urban development initiatives.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <!-- Third image -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="national-item position-relative">
                                         <img src="img/care_giver.jpg" class="img-fluid w-100 rounded" alt="Image">
                                         <div class="national-content">
                                             <div class="national-info">
                                                 <h5 class="text-white text-uppercase mb-2">Care Giver Industry</h5>
                                             </div>
                                         </div>
+                                        <div class="hover-description">
+                                            <p>The Japanese SSW Visa (Specified Skilled Worker) for the Caregiver Industry is designed to bring in skilled foreign workers to support Japan’s growing need for elderly and disability care. Workers under this visa assist with daily living activities, personal care, and health management in various care facilities. The visa allows individuals to work in Japan for up to five years, helping to address the shortage of caregivers as the country's aging population increases.</p>
+                                        </div>
                                     </div>
                                 </div>
+                
+                                <!-- Fourth image -->
                                 <div class="col-md-6 col-lg-4">
-                                    <div class="national-item">
-                                        <img src="img/food.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <div class="national-item position-relative">
+                                        <img src="img/food.jpg" class="img-fluid w-100 rounded" alt="Image" style="height: 280px; object-fit: cover;">
                                         <div class="national-content">
                                             <div class="national-info">
                                                 <h5 class="text-white text-uppercase mb-2">Food Industry</h5>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="national-item">
-                                        <img src="img/machine_tooling.jpg" class="img-fluid w-100 rounded" alt="Image">
-                                        <div class="national-content">
-                                            <div class="national-info">
-                                                <h5 class="text-white text-uppercase mb-2">Machine parts & tooling Industry</h5>
-                                            </div>
+                                        <div class="hover-description">
+                                            <p>The Japanese SSW Visa (Specified Skilled Worker) for the Food Industry aims to attract skilled foreign workers to meet the labor demands in Japan’s food production and processing sector. Workers under this visa are employed in roles such as food manufacturing, processing, quality control, and packaging. The visa allows individuals to work in Japan for up to five years, supporting the country's food supply chain.</p>
                                         </div>
                                     </div>
                                 </div>
+                                
+                
+                                <!-- Fifth image -->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="national-item position-relative">
+                                        <img src="img/machine_tooling.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                        <div class="national-content">
+                                            <div class="national-info">
+                                                <h5 class="text-white text-uppercase mb-2">Machine Parts & Tooling Industry</h5>
+                                            </div>
+                                        </div>
+                                        <div class="hover-description">
+                                            <p>The Japanese SSW Visa (Specified Skilled Worker) for the Machine Parts and Tooling Industry is designed to attract skilled foreign workers to fill labor shortages in Japan's manufacturing sector. Workers under this visa engage in tasks such as machine operation, part assembly, and maintenance of industrial tools and equipment. The visa allows individuals to work in Japan for up to five years, supporting the production of high-precision machinery and contributing to the nation's industrial growth.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <!-- Call to action button -->
                                 <div class="col-lg-15" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8))">
-                                <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="contact.html">Register for more Information</a>
+                                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="contact.html">Register for more Information</a>
                                 </div>
                             </div>
                         </div>
@@ -956,21 +1005,13 @@
                                 <div class="guide-title-inner">
                                     <h4 class="mt-3">M.A. SHAMEERA KULATHUNGA</h4>
                                     <p class="mb-0">Japan Representing Officer</p>
-                                    <button class="btn btn-link mt-2 arrow-btn" onclick="toggleDetails('details1', this)" style="font-weight: bold; color: black; ">↓</button>
-                                    <div id="details1" class="director-details" style="display: none;">
+                                    <div id="details1" class="director-details" style="display: block;"> <!-- Set display to block -->
                                         <ul class="mt-3 text-start">
-                                            <li>Business Owner
-                                                Chenaya International LLC -Jan 2020- present</li>
+                                            <li>Business Owner Chenaya International LLC -Jan 2020- present</li>
                                             <li>Representative Japan India Jan 2017- Dec 2019
                                                 Tokyo Seimitsu Co; LTD</li>
                                             <li>Robotics Operator 2008-2016
                                                 Showagomu Co; Ltd</li>
-                                            <!-- <li>
-                                                CV: 
-                                                <a href="files/Director1_CV.pdf" download class="ms-2" style="font-weight: bold; color: black;">
-                                                    <i class="fas fa-download"></i>
-                                                </a>
-                                            </li> -->
                                         </ul>
                                     </div>
                                 </div>
@@ -988,8 +1029,7 @@
                                 <div class="guide-title-inner">
                                     <h4 class="mt-3">K.A SISIRA KUMARA</h4>
                                     <p class="mb-0">Sri Lankan Managing Director</p>
-                                    <button class="btn btn-link mt-2 arrow-btn" onclick="toggleDetails('details2', this)" style="font-weight: bold; color: black;">↓</button>
-                                    <div id="details2" class="director-details" style="display: none;">
+                                    <div id="details2" class="director-details" style="display: block;"> <!-- Set display to block -->
                                         <ul class="mt-3 text-start">
                                             <li>Have 22 years of experience in Sri Lanka Military Police. 
                                                 (Retired Position – Warrant Officer -01)</li>
@@ -997,12 +1037,6 @@
                                                 rider team (2006-2015)</li>
                                             <li>Participated G77 Summit at Bolivia Dated on June of 2014.</li>
                                             <li>Contributed to VVIP security for the CHOGM 2013.</li>
-                                            <!-- <li>
-                                                CV: 
-                                                <a href="files/Director2_CV.pdf" download class="ms-2" style="font-weight: bold; color: black;">
-                                                    <i class="fas fa-download"></i>
-                                                </a>
-                                            </li> -->
                                         </ul>
                                     </div>
                                 </div>
@@ -1010,6 +1044,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
         <!-- Directors End -->
