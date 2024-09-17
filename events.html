@@ -85,10 +85,102 @@
                 <div class="mx-auto text-center mb-5" style="max-width: 900px;">
                     <h5 class="section-title px-3">Our Events</h5>
                     <h1 class="mb-4">Popular Events</h1>
-                    <p class="mb-0">Join us at our popular events that bring together travelers, enthusiasts, and experts from around the world. From cultural festivals and workshops to travel expos and networking sessions, our events are designed to connect you with like-minded individuals and provide valuable insights into exploring Japan. Whether you're looking to immerse yourself in Japanese traditions, learn about the latest travel trends, or simply meet new people, our events offer something for everyone. Don't miss the opportunity to be a part of these exciting gatherings—mark your calendar and experience the best of Japan with us!</p>
+                    <p class="mb-0">Join us at our popular events that bring together travelers, enthusiasts, and experts from around the world. From cultural festivals and workshops to travel expos and networking sessions, our events are designed to connect you with like-minded individuals and provide valuable insights into exploring Japan.</p>
                 </div>
-                <div style="text-align: center;"><h3>Coming Soon....</h3></div>
-
+                <div class="container my-5 position-relative">
+                    <hr style="height: 5px; margin-bottom: 40px;">                    
+                    <!-- Featured Image with Overlay Text, Description, and Image Count -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="national-item position-relative" style="height: 275px; object-fit: cover;">
+                            <a href="openingimg/open4.jpg" data-lightbox="opening-gallery">
+                                <img src="openingimg/open4.jpg" class="img-fluid w-100 rounded" alt="Opening Ceremony" style="cursor: pointer; height: 100%;">
+                            </a>
+                            <div class="national-content position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center" style="background-color: rgba(211, 211, 211, 0.8); padding: 10px; border-radius: 8px;">
+                                <div class="national-info text-center">
+                                    <h4 class="text-black text-uppercase mb-2">Opening Ceremony</h4>
+                                </div>
+                            </div>                           
+                            <!-- Image Count in the Bottom Right Corner -->
+                            <div class="position-absolute bottom-0 end-0 bg-dark text-white rounded-pill px-2 py-1" style="font-size: 1rem; margin: 10px;">
+                                +<span id="imageCount">3</span> images
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Hidden Gallery Images -->
+                    <div id="galleryImages" class="d-none">
+                        <a href="openingimg/open1.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open1.jpg" alt="Opening Ceremony 2">
+                        </a>
+                        <a href="openingimg/open2.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open2.jpg" alt="Opening Ceremony 3">
+                        </a>
+                        <a href="openingimg/open3.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open3.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open5.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open5.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open6.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open6.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open7.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open7.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open8.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open8.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open9.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open9.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open10.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open10.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open11.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open11.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open12.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open12.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open13.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open13.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open14.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open14.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open15.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open15.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open16.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open16.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open17.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open17.jpg" alt="Opening Ceremony 4">
+                        </a>
+                        <a href="openingimg/open18.jpg" data-lightbox="opening-gallery">
+                            <img src="openingimg/open18.jpg" alt="Opening Ceremony 4">
+                        </a>
+                    </div>
+                </div>
+                
+                <script>
+                    // Get the total number of hidden images and update the image count dynamically
+                    const galleryImages = document.querySelectorAll('#galleryImages a');
+                    const imageCount = galleryImages.length;
+                    document.getElementById('imageCount').textContent = imageCount;
+                
+                    // Add hover effect for showing description
+                    const nationalItem = document.querySelector('.national-item');
+                    const hoverDescription = nationalItem.querySelector('.hover-description');
+                
+                    nationalItem.addEventListener('mouseover', function() {
+                        hoverDescription.style.opacity = '1';
+                    });
+                
+                    nationalItem.addEventListener('mouseout', function() {
+                        hoverDescription.style.opacity = '0';
+                    });
+                </script>
                 <!-- <div class="row g-4 justify-content-center">
                     <div class="col-lg-4 col-md-6">
                         <div class="blog-item">
