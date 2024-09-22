@@ -1268,3 +1268,30 @@
   background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+@media (max-width: 425px) {
+  .navbar-brand h1 {
+      font-size: 24px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar-brand h1 {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-inner img {
+      height: auto;
+      width: 100%;
+  }
+
+  .carousel-caption h1 {
+      font-size: 24px; /* Smaller headings on mobile */
+  }
+
+  .carousel-caption h4 {
+      font-size: 16px; /* Smaller sub-headings on mobile */
+  }
+}
