@@ -29,7 +29,7 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
 
-        <style>
+        <style> 
             .national-item {
                 position: relative;
             }
@@ -65,10 +65,16 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0"><img src="./img/kanto logo.png" alt="">KANTO CONSULTING (PVT) LTD.</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"> 
+                <a href="" class="navbar-brand p-0 m-0">
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 col-md-3 col-sm-3 text-center p-0">
+                            <img src="./img/kanto logo.png" alt="" class="img-fluid mb-2">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 text-center p-0">
+                            <h1 class="mb-2">KANTO CONSULTING (PVT) LTD.</h1>
+                        </div>
+                    </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -941,107 +947,124 @@
                     </div>
                     <div class="col-lg-6">
                         <h1 class="text-white mb-3">Register</h1>
-                        <div class="col-lg-16">
-                            <p class="mb-4">Fill in to Register and recieve more Information.</p>
-                            <div class="col-lg-8">
-                                <form action="https://api.web3forms.com/submit" method="POST">
-                                    <div class="row g-3">
-                                        <div class="col-md-6">
-                                            <input type="hidden" name="access_key" value="7d1c62ce-7fa1-466d-9afb-339f945d7b8f">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="name" name="name" placeholder="Your Name" required>
-                                                <label for="name">Your Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="email" name="email" placeholder="Your Email" required>
-                                                <label for="email">Your Email</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="subject" name="subject" placeholder="Subject">
-                                                <label for="subject">Subject</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-floating">
-                                                <input type="tel" class="form-control border-0" id="phone" name="phone" placeholder="Your Phone Number" required>
-                                                <label for="phone">Phone Number</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-floating">
-                                                <select class="form-control border-0" id="visa" name="visa" required>
-                                                    <option value="">Select Visa Type</option>
-                                                    <option value="SSW Visa">SSW Visa</option>
-                                                    <option value="Training Visa">Training Visa</option>
-                                                    <option value="Student Visa">Student Visa</option>
-                                                </select>
-                                                <label for="visa">Visa Type</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-floating">
-                                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" name="message" style="height: 160px" required></textarea>
-                                                <label for="message">Message</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="btn btn-primary w-100 py-3">REGISTER</button>
-                                        </div>
+                        <p class="mb-4">Fill in to Register and receive more information.</p>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="7d1c62ce-7fa1-466d-9afb-339f945d7b8f">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0" id="name" name="name" placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
                                     </div>
-                                </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control border-0" id="email" name="email" placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0" id="subject" name="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control border-0" id="phone" name="phone" placeholder="Your Phone Number" required>
+                                        <label for="phone">Phone Number</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-control border-0" id="visa" name="visa" required>
+                                            <option value="">Select Visa Type</option>
+                                            <option value="SSW Visa">SSW Visa</option>
+                                            <option value="Training Visa">Training Visa</option>
+                                            <option value="Student Visa">Student Visa</option>
+                                        </select>
+                                        <label for="visa">Visa Type</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control border-0" placeholder="Leave a message here" id="message" name="message" style="height: 160px" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3">REGISTER</button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
+                    
                 </div>
             </div>
         </div>
         <!-- Tour Booking End -->
 
         <!-- Directors Start -->
-        <div style="width: 100%; padding: 40px 0;">
-            <div style="max-width: 900px; margin: 0 auto; text-align: center; margin-bottom: 40px;">
-                <h5 style="padding: 10px; display: inline-block;">Director Board</h5>
-                <h1 style="margin: 0;">Meet Our Directors</h1>
+        <div class="directors-section">
+            <div class="directors-header">
+                <h5>Director Board</h5>
+                <h1>Meet Our Directors</h1>
             </div>
-            <div style="display: flex; justify-content: center;">
-                <div style="width: 90%; background-color: #f0f0f0; padding: 20px; border-radius: 10px;">
-                    <!-- Director 1 -->
-                    <div style="display: flex; margin-bottom: 40px;">
-                        <div style="flex-shrink: 0;">
-                            <img src="img/director2.jpeg" style="width: 100px; height: 100px; border-radius: 50%;" alt="Image">
-                        </div>
-                        <div style="margin-left: 15px;">
-                            <h4 style="margin: 0;">K.A. Anura Sisira Kumara</h4>
-                            <p style="margin: 5px 0 15px; font-weight: bold;">Sri Lanka Managing Director</p>
-                            <p>I am K.A. Anura Sisira Kumara, and it is my honor to serve as the Director of KANTO CONSULTING PVT LTD in Sri Lanka. With over 22 years of experience as an Authorized Officer at the Sri Lanka Military Police (1995-2017), I have gained deep insights into leadership, security, and discipline. I also had the privilege of working as a VVIP Military Police Officer (2006-2015) at the President's Security Division for more than a decade. This role allowed me to develop valuable interpersonal skills and form strong connections with people from all walks of life.</p>
-                            <p>After retirement from military police, I worked as a Health and Safety Executive at Sierra Constructions Pvt Ltd. (2018-2020). after that, I worked Water Project safety officer at SADE Company Limited Matale (2020-2022). Recently, I have worked as a safety officer at Edward and Christie Company Limited (2022-2024).</p>
-                            <p>The current economic crisis in Sri Lanka has deeply impacted our people, and I have seen firsthand the struggles they face. This is what motivated me to co-found KANTO CONSULTING. Through our company, we are dedicated to helping individuals overcome these hardships by providing access to global job opportunities and study abroad programs. I believe that KANTO CONSULTING is a beacon of hope, offering people the chance to change their lives and secure a brighter future for themselves and their families.</p>
-                            <p style="margin-top: 10px;"><b>Message from the Director:</b></p>
-                            <p>"Throughout my years of service to the nation, I have seen both the resilience and the challenges our people endure. Now, more than ever, they need support and guidance to navigate these tough times. That’s why I co-founded KANTO CONSULTING. Our mission is to show that there are better opportunities available—whether through global employment or education abroad. We are here to help people take those steps toward a more successful future, providing the tools and pathways to achieve their dreams."</p>
-                            <p>Warm regards,<br/>K.A. Anura Sisira Kumara.</p>
-                        </div>
+            <div class="directors-container">
+                <div class="director-card mb-3 p-2">
+                    <div class="director-image">
+                        <img src="img/director2.jpeg" alt="Image of K.A. Anura Sisira Kumara">
                     </div>
-                    <hr style="height: 5px;">
-        
-                    <!-- Director 2 -->
-                    <div style="display: flex;">
-                        <div style="flex-shrink: 0;">
-                            <img src="img/Director1.jpeg" style="width: 100px; height: 100px; border-radius: 50%;" alt="Image">
-                        </div>
-                        <div style="margin-left: 15px;">
-                            <h4 style="margin: 0;">M.A. Shameera Kulathunga</h4>
-                            <p style="margin: 5px 0 15px; font-weight: bold;">Japan Representing Officer</p>
-                            <p>I am M.A. Shameera Kulathunga, the esteemed Director of KANTO CONSULTING PVT LTD, brings over two decades of international experience and expertise to the company. Having resided in Japan for more than 20 years and holding permanent residency. I was born and grown in Sri lanka after high school my journey began in 2004 when I moved to Japan to pursue a career in business development and customer service. I studied Japanese at the prestigious Unitas Japanese Language School and graduated diploma from Chou Shoka Professional Training College in 2006.</p>
-                            <p>My professional background extends into the automotive industry, where I attended automobile auctions, sourced vehicles for clients, and handled special orders by carefully documenting customer preferences. Over a three-year period, I successfully sold a wide range of vehicles (2020-present). I was measurement tool representative officer for India at Tokyo Seimitsu Co., Ltd., enhancing my global business expertise. Prior to that, I worked as a robotics operator at Showagomu Co., Ltd.(2008-2016).</p>
-                            <p>As an entrepreneur, I established several successful businesses in Japan, including Chenaya International. My strengths lie in business development, customer service,  and strong organizational skills. I am adept at multitasking and thrive in finding innovative solutions to complex challenges. I continue to build robust business relationships both in Japan and internationally.</p>
-                            <p style="margin-top: 10px;"><b>Message from the Director:</b></p>
-                            <p>"As someone who has navigated both Sri Lankan and Japanese business landscapes, I firmly believe in creating opportunities that go beyond borders. At KANTO CONSULTING, our mission is to help individuals realize their full potential, whether through education, employment, or international business ventures. My journey started with a step in 2004, and today I am privileged to guide others in taking theirs. We are dedicated to supporting your goals, offering pathways to growth, and building meaningful connections across nations. Together, we will achieve success."</p>
-                            <p>Warm regards,<br/>M.A. Shameera Kulathunga.</p>
-                        </div>
+                    <div class="director-details">
+                        <h4>K.A. Anura Sisira Kumara</h4>
+                        <p class="position">Sri Lanka Managing Director</p>
+                        <p>
+                            I am K.A. Anura Sisira Kumara, and it is my honor to serve as the Director of KANTO CONSULTING PVT LTD in Sri Lanka. 
+                            With over 22 years of experience as an Authorized Officer at the Sri Lanka Military Police (1995-2017), I have gained deep insights into leadership, security, and discipline. 
+                            I also had the privilege of working as a VVIP Military Police Officer (2006-2015) at the President's Security Division for more than a decade. 
+                            This role allowed me to develop valuable interpersonal skills and form strong connections with people from all walks of life.
+                        </p>
+                        <p>
+                            The current economic crisis in Sri Lanka has deeply impacted our people, and I have seen firsthand the struggles they face. 
+                            This is what motivated me to co-found KANTO CONSULTING. Through our company, we are dedicated to helping individuals overcome these hardships by providing access to global job opportunities and study abroad programs. 
+                            I believe that KANTO CONSULTING is a beacon of hope, offering people the chance to change their lives and secure a brighter future for themselves and their families.
+                        </p>
+                        <p>
+                            <strong>Message from the Director:</strong>
+                        </p>
+                        <p>"Throughout my years of service to the nation, I have seen both the resilience and the challenges our people endure. 
+                            Now, more than ever, they need support and guidance to navigate these tough times. That’s why I co-founded KANTO CONSULTING. 
+                            Our mission is to show that there are better opportunities available—whether through global employment or education abroad. 
+                            We are here to help people take those steps toward a more successful future, providing the tools and pathways to achieve their dreams."
+                        </p>
+                        <p>Warm regards,<br/>K.A. Anura Sisira Kumara.</p>
+                    </div>
+                </div> 
+                <div class="director-card p-2">
+                    <div class="director-image">
+                        <img src="img/Director1.jpeg" alt="Image of M.A. Shameera Kulathunga">
+                    </div>
+                    <div class="director-details">
+                        <h4>M.A. Shameera Kulathunga</h4>
+                        <p class="position">Japan Representing Officer</p>
+                        <p>
+                            I am M.A. Shameera Kulathunga, the esteemed Director of KANTO CONSULTING PVT LTD, brings over two decades of international experience and expertise to the company. 
+                            Having resided in Japan for more than 20 years and holding permanent residency. I was born and grown in Sri lanka after high school my journey began in 2004 when I moved to Japan to pursue a career in business development and customer service. 
+                            I studied Japanese at the prestigious Unitas Japanese Language School and graduated diploma from Chou Shoka Professional Training College in 2006.
+                        </p>
+                        <p>
+                            My professional background extends into the automotive industry, where I attended automobile auctions, sourced vehicles for clients, and handled special orders by carefully documenting customer preferences. 
+                            Over a three-year period, I successfully sold a wide range of vehicles (2020-present). I was measurement tool representative officer for India at Tokyo Seimitsu Co., Ltd.,
+                             enhancing my global business expertise. Prior to that, I worked as a robotics operator at Showagomu Co., Ltd.(2008-2016).
+                        </p>
+                        <p><strong>Message from the Director:</strong></p>
+                        <p>
+                            "As someone who has navigated both Sri Lankan and Japanese business landscapes, I firmly believe in creating opportunities that go beyond borders. 
+                            At KANTO CONSULTING, our mission is to help individuals realize their full potential, whether through education, employment, or international business ventures. 
+                            My journey started with a step in 2004, and today I am privileged to guide others in taking theirs. 
+                            We are dedicated to supporting your goals, offering pathways to growth, and building meaningful connections across nations. Together, we will achieve success."
+                        </p>
+                        <p>Warm regards,<br/>M.A. Shameera Kulathunga.</p>
                     </div>
                 </div>
             </div>
